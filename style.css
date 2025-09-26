@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0;
+ 
 }
 
 .nav {
@@ -26,7 +27,9 @@
  
 }
 
-
+.nav :hover{
+color: orange;
+}
 
 .content h1 {
   border: 2px solid black;
@@ -57,36 +60,42 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .bosspic{
     border-radius: 30px;
     box-shadow: 3px 0px 6px 0px;
+
 }
 
 .designer1{
     border-radius: 30px;
     margin: 3px;
     box-shadow: 3px 0px 6px 0px;
+ 
 }
 
 .designer2{
     border-radius: 30px;
     margin: 3px;
     box-shadow: 3px 0px 6px 0px;
+     display: flex;
 }
 
 .worker1{
     border-radius: 30px;
     margin: 3px;
     box-shadow: 3px 0px 6px 0px;
+   
 }
 
 .worker2{
     border-radius: 30px;
     margin: 3px;
     box-shadow: 3px 0px 6px 0px;
+   
 }
 
 .worker3{
     border-radius: 30px;
     margin: 3px;
     box-shadow: 3px 0px 6px 0px;
+ 
 }
 
 
@@ -100,17 +109,20 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 60%;
   padding: 20px;
   margin: 5px;
+  
 }
 
 .thumbsupic img {
   width: 100%;
   height: auto;
+ 
 }
 
 .aboutgoals {
   width: 40%;
   padding: 10px;
   margin: 10px;
+
 }
 
 
@@ -129,6 +141,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+   display: flex;
 }
 
 .gallery img:hover {
@@ -144,6 +157,13 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.enquiryimg{
+  width: 100%; 
+  height: auto; 
 }
 
 .cover{
@@ -159,16 +179,15 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .form{
 
 
-   max-width: 100%;
-  width: 80%;
-  margin: 40px;
+   max-width: 80%;
+  margin: 40px auto;
   padding: 20px;
   background-color: whitesmoke;
-  border: 1px ;
+  border: 1px solid #ccc ;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: palevioletred;
-  
+ 
 }  
 
 .form input, .form textarea {
@@ -204,6 +223,7 @@ background-color: #dda0dd;
 .contact {
   background-image:url(images/people-working-call-center-25341790.webp);
   text-align: center;
+
 }
 
 .contact ul {
@@ -217,4 +237,6 @@ background-color: #dda0dd;
 
 .Thankyou{ 
   background-color:  rgb(199, 72, 72);
+  text-align: center;
+
 }
