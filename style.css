@@ -1,0 +1,220 @@
+.mainpage {
+  background-image: url('images/maxresdefault.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 10px;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: 7px;
+  display: flex;
+
+}
+
+
+.nav a {
+  color: black;
+ 
+}
+
+
+
+.content h1 {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+text-align: left;
+position: absolute;
+  bottom: 0;
+  width: 100%;
+
+
+}
+ 
+.about{
+  background-color:  rgb(199, 72, 72);
+}
+
+.aboutintrop{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bosspic{
+    border-radius: 30px;
+    box-shadow: 3px 0px 6px 0px;
+}
+
+.designer1{
+    border-radius: 30px;
+    margin: 3px;
+    box-shadow: 3px 0px 6px 0px;
+}
+
+.designer2{
+    border-radius: 30px;
+    margin: 3px;
+    box-shadow: 3px 0px 6px 0px;
+}
+
+.worker1{
+    border-radius: 30px;
+    margin: 3px;
+    box-shadow: 3px 0px 6px 0px;
+}
+
+.worker2{
+    border-radius: 30px;
+    margin: 3px;
+    box-shadow: 3px 0px 6px 0px;
+}
+
+.worker3{
+    border-radius: 30px;
+    margin: 3px;
+    box-shadow: 3px 0px 6px 0px;
+}
+
+
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbsupic {
+  width: 60%;
+  padding: 20px;
+  margin: 5px;
+}
+
+.thumbsupic img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutgoals {
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  border: navy;
+  border-radius: 2px;
+}
+
+.servicesmain{
+  background-image: url(images/tufting-gun-multicolored-yarns-against-260nw-2119228451.webp);
+   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.cover{
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  padding: 7px;
+}
+
+
+.form{
+
+
+   max-width: 100%;
+  width: 80%;
+  margin: 40px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: palevioletred;
+  
+}  
+
+.form input, .form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cc399b;
+  box-sizing: border-box palevioletred;
+
+}
+
+.form button{
+  margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #d87093;
+    color: #800080;
+    border: none;
+    cursor: pointer;
+}
+.form button:hover{
+background-color: #dda0dd;
+
+}
+
+.enquirypage img{
+  text-align: center;
+}
+
+.enquirypage h2{
+    color: black;
+}
+
+.contact {
+  background-image:url(images/people-working-call-center-25341790.webp);
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+.Thankyou{ 
+  background-color:  rgb(199, 72, 72);
+}
