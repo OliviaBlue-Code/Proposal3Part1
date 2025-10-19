@@ -26,7 +26,8 @@
       <hr><br>
       <!--form-->
       <div class="form">
-      <form METHOD="post" action="thankYou.html" class="form">
+      <form onsubmit="return validateForm()"
+      METHOD="post" action="thankYou.html" class="form">
         <label for="name">First Name:</label>
         <input type="text" id="name" placeholder="e.g Lesego" required><br><br>
     
@@ -43,6 +44,19 @@
     
        </form>
     </div>
+    <script>
+     function validateForm(){
+            const email =document.getElementById("email").value;
+            const error =document.getElementById("error");
+            if (!email.includes("@")){
+                error.innerText = "Please enter a valid email.";
+                return false;
+            }
+            error.innerText = ""; //means if there's no error 
+            alert("Form submitted!");
+            return true;
+        }
+        </script>
 </body>
 <!--footer-->
 <footer>

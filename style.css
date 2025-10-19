@@ -18,17 +18,19 @@
   justify-content: space-evenly;
   margin: 7px;
   display: flex;
+    letter-spacing: 2px;
 
 }
 
 
 .nav a {
   color: black;
- 
+   letter-spacing: 2px;
 }
 
 .nav :hover{
 color: orange;
+  letter-spacing: 2px;
 }
 
 .content h1 {
@@ -142,6 +144,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border-radius: 20px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
    display: flex;
+   padding: 10px;
 }
 
 .gallery img:hover {
@@ -149,6 +152,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   transition: transform 0.2s ease-in-out;
   border: navy;
   border-radius: 2px;
+  box-shadow: 5px 0px 8px 0px gray;
 }
 
 .servicesmain{
