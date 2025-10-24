@@ -26,13 +26,12 @@
       <hr><br>
       <!--form-->
       <div class="form">
-      <form onsubmit="return validateForm()"
-      METHOD="post" action="thankYou.html" class="form">
+      <form onsubmit="return validateForm()" method="post" action="thankYou.html"  class="form">
         <label for="name">First Name:</label>
         <input type="text" id="name" placeholder="e.g Lesego" required><br><br>
     
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="e.g Lesego123@gmail.com" required><br><br>
+        <input type="text" id="email" placeholder="e.g Lesego123@gmail.com" required><br><br>
     
         <label for="phone number">Phone Number:</label>
         <input type="tel" id="phone number" placeholder="e.g +27 623039645" maxlength="10" required><br><br>
@@ -41,6 +40,7 @@
         <textarea type="text" id="question" placeholder="Type question here" rows="6"></textarea><br><br>
     
         <button type="submit">Submit</button>
+        <p id="error"></p>
     
        </form>
     </div>
