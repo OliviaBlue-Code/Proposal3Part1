@@ -28,5 +28,15 @@ function toggleMenu() {
       });
     }
 
+  function showPhotos() {
+  const container = document.getElementById('photo-container');
+  const hiddenPhotos = container.querySelectorAll('.photo-box.hidden');
+  hiddenPhotos.forEach((box, index) => {
+    if (index < 3) { // Show 3 at a time
+      box.classList.remove('hidden');
+    }
+  });
+}  
+
 
 
