@@ -360,7 +360,26 @@ background-color: #dda0dd;
   }
 }
 
-for css
+/* Hide elements by default */
 .hidden {
-  display: none;
+  display: none;
 }
+
+/* Spinner container. we say # because its a global spinner which means we only use one spinner throughout the entire page */
+#spinner {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#spinner i {
+  font-size: 40px;
+  color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+

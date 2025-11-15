@@ -6,6 +6,8 @@
     <!--Services page title-->
     <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <!--back to homepage navigation-->
@@ -55,6 +57,7 @@
     <img src="images/c5ce55f6418cf572e92f8945df9eddab.jpg" alt="" width="300" height="250">
     
     
+    <div class="hidden">
     <img src="images/bf9dfdcbb648af82fcc9e9e92387e2af.jpg" alt="" width="300" height="250">
     <img src="images/baa3c7272889243e5f944d3fbcb82224.jpg" alt="" width="300" height="250">
     <img src="images/b8523162d04186cdabc21ef7fa818a23.jpg" alt="" width="300" height="250">
@@ -88,8 +91,9 @@
     <img src="images/7596f3b4469e6c5663e29481312b56b8.jpg" alt="" width="300" height="250">
     <img src="images/4465ba47e1be1937c5f9e9e0128d1c1f.jpg" alt="" width="300" height="250">
     <img src="images/4328d7083302ec450de8578441043b05.jpg" alt="" width="300" height="250">
+    </div>
     
-    
+    <div class="hidden">
     <img src="images/3321c80349bd22c5f1a594b1c39e6ed1.jpg" alt="" width="300" height="250">
     <img src="images/2819a6056e6addd7fcaadab8934fae5c.jpg" alt="" width="300" height="250">
     <img src="images/956eb34746705451a8adce898ca98d5e.jpg" alt="" width="300" height="250">
@@ -117,8 +121,9 @@
     <img src="images/5b99b8c525cf4dd95dd5de48e1d6641d.jpg" alt="Hand with Roll of money rug" width="300" height="250">
     <img src="images/5ce7950b37ad8d17b0d8cabc906908c9.jpg" alt="Charrizard pokemon rug" width="300" height="250">
     <img src="images/6a79b703e691d37fe3e340fbfc614ae3.jpg" alt="Bluey rug" width="300" height="250">
+    </div>
     
-    
+    <div class="hidden">
     <img src="images/6adec6f5a8d1137dea6ab4e86bef2fde.jpg" alt="Cute duck with butcherkife rug" width="300" height="250">
     <img src="images/6c9339a72502645ae83daa4046a2f121.jpg" alt="Pink fluffy carpet" width="300" height="250">
     <img src="images/6ccb950841a9c289160afb3e30afc5d4.jpg" alt="         " width="300" height="250">
@@ -144,7 +149,16 @@
     <img src="images/098d6bd22e6de4917d392a8c25f21616.jpg" alt="Playboy bunny rug" width="300" height="250">
     <img src="images/099aca17d2ea49e2ff20321a297f0f40.jpg" alt="         " width="300" height="250">
     </div>
+</div>
     </div>
+    
+<div id="spinner" class="hidden">
+  <i class="fa fa-spinner"></i>
+</div>
+
+<!-- Button -->
+<button onclick="showPhotos()">Load More</button>
+
 </body>
 <footer>
     &copy;TuftAway 2021

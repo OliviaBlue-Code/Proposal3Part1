@@ -28,15 +28,25 @@ function toggleMenu() {
       });
     }
 
-  function showPhotos() {
-  const container = document.getElementById('photo-container');
-  const hiddenPhotos = container.querySelectorAll('.photo-box.hidden');
-  hiddenPhotos.forEach((box, index) => {
-    if (index < 3) { // Show 3 at a time
-      box.classList.remove('hidden');
-    }
-  });
-}  
+ function showPhotos() {
+  const container = document.getElementById('photo-container');
+  const hiddenPhotos = container.querySelectorAll('.hidden');
+  const spinner = document.getElementById('spinner');
+
+  if (hiddenPhotos.length === 0) return;
+
+  // Show spinner
+  spinner.classList.remove('hidden');
+
+  // Reveal next batch immediately (CSS will delay the visibility)
+  hiddenPhotos[0].classList.remove('hidden');
+
+  // Hide spinner after CSS animation ends
+  spinner.addEventListener('animationend', () => {
+    spinner.classList.add('hidden');
+  }, { once: true });
+}
+
 
 
 
