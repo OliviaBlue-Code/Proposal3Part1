@@ -406,6 +406,11 @@ background-color: #dda0dd;
   color: #fff;
 }
 
+.dark-mode .contact ul li {
+  color: #000;
+}
+
+
 /* Hide elements by default */
 .hidden {
   display: none;
