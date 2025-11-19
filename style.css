@@ -1,7 +1,7 @@
 
-*{
+/**{
   outline: 1px solid black;
-}
+}*/
   
 .mainpage {
   background-image: url('images/maxresdefault.jpg');
@@ -33,7 +33,7 @@
 .nav {
   position: sticky;
   top: 0;
-  background-color: grey/* rgba(255, 255, 255, 0.5); */;
+  background-color: whitesmoke/* rgba(255, 255, 255, 0.5); */;
   padding: 10px;
   text-align: center;
   justify-content: space-evenly;
@@ -213,7 +213,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
 
-
+/*
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -229,6 +229,23 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
    display: flex;
    padding: 10px;
+}*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+   
 }
 
 .gallery img:hover {
@@ -340,19 +357,35 @@ background-color: #dda0dd;
   cursor: pointer;
 }
 
-@media (max-width: 400px) { /*menu in mobile view*/
-  .nav {
+.butt-load{
+  color:aqua ;
+}
+
+/*@media (max-width: 400px) { /*menu in mobile view*/
+  /*.nav {
     display: none; /*so the menu isnt visible if the menu icon isnt cliked*/
-    flex-direction: column;
+  /*  flex-direction: column;
     background-color: #ebdddd;
     position: absolute;
     top: 60px;
     right: 0;
     width: 200px;
+  }*/
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav.active {
     display: flex;
+  }
+
+  .fa-grav{
+    width: 50px;
+    height: 48px;
   }
 
   .menu-toggle {
@@ -360,13 +393,53 @@ background-color: #dda0dd;
   }
 }
 
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .nav {
+  background-color: #444;
+}
+
+.dark-mode .nav a {
+  color: #fff;
+}
+
 /* Hide elements by default */
 .hidden {
   display: none;
+   margin: 10px;
 }
 
+.hidden img {
+    margin: 10px;
+   
+}
+
+#photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 /* Spinner container. we say # because its a global spinner which means we only use one spinner throughout the entire page */
-#spinner {
+/*#spinner {
+    /*text-align: center;
+    margin: 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#spinner i {
+    font-size: 40px;
+    color: #fca82b;
+    animation: spin 1s linear infinite;
+
+
+    #spinner {
   text-align: center;
   margin: 20px 0;
 }
@@ -376,10 +449,28 @@ background-color: #dda0dd;
   color: #3498db;
   animation: spin 1s linear infinite;
 }
+}*/
+
+
+   /* text-align: center;
+    margin: 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#spinner i {
+    font-size: 40px;
+    color: #fca82b;
+    animation: spin 1s linear infinite;
+}
+
 
 @keyframes spin {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}*/
 
 

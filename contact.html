@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title><!--contact us page title--> 
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title><!--contact us page title-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="canonical" href="https://yourwebsite.com/">
+  <script src="js/script.js" defer></script>
 </head>
 <body class="contact">
   <!--back to homepage navigation-->
-  <nav class="nav">
-    <a href="index.html"><strong>Home Page</strong></a><br>
-    <a href="about.html"><strong>About us</strong></a><br>
-    <a href="services.html"><strong>Product Gallery</strong></a><br>
-    <a href="enquiry.html"><strong>Got Questions?</strong></a><br>
-    <a href="contact.html"><strong>Contact Us</strong></a><br>
-
+  <nav id="navLinks" class="nav">
+    <!---uses Menu-toggle-->
+    <div class="nav-logo"><i class="fa fa-grav"></i></div>
+    <a href="index.html"><strong>Home Page</strong></a>
+    <a href="about.html"><strong>About us</strong></a>
+    <a href="services.html"><strong>Product Gallery</strong></a>
+    <a href="enquiry.html"><strong>Got Questions?</strong></a>
+    <a href="contact.html"><strong>Contact Us</strong></a>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="material-icons">menu</i></div><!--for the hamburger menu-->
   </nav>
-  <!--contact page cover image-->    
-    
-
-      <h1><strong>Contact Us</strong></h1>
-      <ul>
-        <li>Phone<strong>123-456-7890</strong></li>
-        <li>E-mail <strong>ItsTuftAWay232@gmail.com</strong></li>
-        <li>Facebook<strong>@Thatcarpetthough</strong></li>
-        <li>Twitter<strong>@Danglookatthatcarpet</strong></li>
-        <li>On instagram<strong> @ItsTuftAWay</strong></li>
-      </ul>      
-    <br>
-    <h1><strong>Follow Us On</strong></h1>
-    <ul>
-      <li>Facebook<strong>@Thatcarpetthough</strong></li>
-        <li>Twitter<strong>@Danglookatthatcarpet</strong></li>
-        <li>On instagram<strong> @ItsTuftAWay</strong></li>
-    </ul>
-    <br>
-    <ul>
-        <h1><strong>Find Us At</strong></h1>
-        <ul>
-            <li><strong>WestGate Mall, shp nr 37</strong></li>
-            <li><strong>Johannesburg, 26th on Marshall</strong></li>
-            <li><strong>MTN rank, shop nr 128</strong></li>
-            <li><strong>Vaal Mall, shop nr 236</strong></li>
-        </ul>
+  <div class="theme-toggle">
+    <input type="checkbox" id="darkModeToggle" />
+    <label for="darkModeToggle" class="toggle-label">
+      <span class="icon sun">🌞</span>
+      <span class="icon moon">🌙</span>
+      <span class="toggle-ball"></span>
+    </label>
+  </div>
+  <!--contact page cover image-->
+  <h1><strong>Contact Us</strong></h1>
+  <ul>
+    <li>Phone<strong>123-456-7890</strong></li>
+    <li>E-mail <strong>ItsTuftAWay232@gmail.com</strong></li>
+    <li>Facebook<strong>@Thatcarpetthough</strong></li>
+    <li>Twitter<strong>@Danglookatthatcarpet</strong></li>
+    <li>On instagram<strong> @ItsTuftAWay</strong></li>
+  </ul>
+  <br>
+  <h1><strong>Follow Us On</strong></h1>
+  <ul>
+    <li>Facebook<strong>@Thatcarpetthough</strong></li>
+    <li>Twitter<strong>@Danglookatthatcarpet</strong></li>
+    <li>On instagram<strong> @ItsTuftAWay</strong></li>
+  </ul>
+  <br>
+  <h1><strong>Find Us At</strong></h1>
+  <ul>
+    <li><strong>WestGate Mall, shp nr 37</strong></li>
+    <li><strong>Johannesburg, 26th on Marshall</strong></li>
+    <li><strong>MTN rank, shop nr 128</strong></li>
+    <li><strong>Vaal Mall, shop nr 236</strong></li>
+  </ul>
+  <footer>
+    &copy;TuftAway 2021
+  </footer>
 </body>
 </html>

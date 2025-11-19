@@ -6,19 +6,25 @@
     <!--Services page title-->
     <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+     <link rel="canonical" href="https://yourwebsite.com/">
+     <script src="js/script.js"></script>
+
 </head>
 <body>
     <!--back to homepage navigation-->
-    <nav class="nav">
-        <a href="index.html"><strong>Home Page</strong></a><br>
-        <a href="about.html"><strong>About us</strong></a><br>
-        <a href="services.html"><strong>Product Gallery</strong></a><br>
-        <a href="enquiry.html"><strong>Got Questions?</strong></a><br>
-        <a href="contact.html"><strong>Contact Us</strong></a><br>
+     <nav id="navLinks" class="nav">
+    <!---uses Menu-toggle-->
+    <div class="nav-logo"><i class="fa fa-grav"></i></div>
+    <a href="index.html"><strong>Home Page</strong></a>
+    <a href="about.html"><strong>About us</strong></a>
+    <a href="services.html"><strong>Product Gallery</strong></a>
+    <a href="enquiry.html"><strong>Got Questions?</strong></a>
+    <a href="contact.html"><strong>Contact Us</strong></a>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="material-icons">menu</i></div><!--for the hamburger menu-->
+  </nav>
   
-      </nav>
       <div class="servicesmain">
       <!--cover page for services-->
       <div class="cover">
@@ -27,7 +33,7 @@
 <!--Welcome message for gallery-->
     <h1><marquee><strong>Welcome To the home of our creations. If its not here, contact us for a special order</strong></marquee></h1>
     <!--available product pictures. Yes it's a lot but customers need to have options to keep them interested-->
-    <div class="gallery">
+    <div class="gallery" id="photo-container">
     <img src="images/fbd6ce50da51736ee8a85ba819b1dd2b.jpg" alt="Snorlax and pikachu sleeping pokemon rug" width="300" height="250">
     <img src="images/faffc818de9a07bf2cef45324bee2035.jpg" alt="Homer in the bushes rug" width="300" height="250">
     <img src="images/fc452c904deb4049d650e5aa1bd67d4f.jpg" alt="Black and white pattern carpet" width="300" height="250">  
@@ -91,9 +97,7 @@
     <img src="images/7596f3b4469e6c5663e29481312b56b8.jpg" alt="" width="300" height="250">
     <img src="images/4465ba47e1be1937c5f9e9e0128d1c1f.jpg" alt="" width="300" height="250">
     <img src="images/4328d7083302ec450de8578441043b05.jpg" alt="" width="300" height="250">
-    </div>
     
-    <div class="hidden">
     <img src="images/3321c80349bd22c5f1a594b1c39e6ed1.jpg" alt="" width="300" height="250">
     <img src="images/2819a6056e6addd7fcaadab8934fae5c.jpg" alt="" width="300" height="250">
     <img src="images/956eb34746705451a8adce898ca98d5e.jpg" alt="" width="300" height="250">
@@ -121,9 +125,7 @@
     <img src="images/5b99b8c525cf4dd95dd5de48e1d6641d.jpg" alt="Hand with Roll of money rug" width="300" height="250">
     <img src="images/5ce7950b37ad8d17b0d8cabc906908c9.jpg" alt="Charrizard pokemon rug" width="300" height="250">
     <img src="images/6a79b703e691d37fe3e340fbfc614ae3.jpg" alt="Bluey rug" width="300" height="250">
-    </div>
     
-    <div class="hidden">
     <img src="images/6adec6f5a8d1137dea6ab4e86bef2fde.jpg" alt="Cute duck with butcherkife rug" width="300" height="250">
     <img src="images/6c9339a72502645ae83daa4046a2f121.jpg" alt="Pink fluffy carpet" width="300" height="250">
     <img src="images/6ccb950841a9c289160afb3e30afc5d4.jpg" alt="         " width="300" height="250">
@@ -157,7 +159,9 @@
 </div>
 
 <!-- Button -->
-<button onclick="showPhotos()">Load More</button>
+ <div class="butt-load">
+  <button onclick="showPhotos()">Load More</button>
+ </div>
 
 </body>
 <footer>

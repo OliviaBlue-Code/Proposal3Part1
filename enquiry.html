@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--enquiry page title-->
-    <title>Got Questions?</title>
-    <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--enquiry page title-->
+  <title>Got Questions?</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="https://yourwebsite.com/">
+  <script src="js/script.js" defer></script>
 </head>
 <body class="enquirypage">
   <!--navigation bar back to homepage-->
-  <nav class="nav">
-    <a href="index.html"><strong>Home Page</strong></a><br>
-    <a href="about.html"><strong>About us</strong></a><br>
-    <a href="services.html"><strong>Product Gallery</strong></a><br>
-    <a href="enquiry.html"><strong>Got Questions?</strong></a><br>
-    <a href="contact.html"><strong>Contact Us</strong></a><br>
-
+  <nav id="navLinks" class="nav">
+    <!---uses Menu-toggle-->
+    <div class="nav-logo"><i class="fa fa-grav"></i></div>
+    <a href="index.html"><strong>Home Page</strong></a>
+    <a href="about.html"><strong>About us</strong></a>
+    <a href="services.html"><strong>Product Gallery</strong></a>
+    <a href="enquiry.html"><strong>Got Questions?</strong></a>
+    <a href="contact.html"><strong>Contact Us</strong></a>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="material-icons">menu</i></div><!--for the hamburger menu-->
   </nav>
-      <!--enquiry page cover image-->
-      <img src="images/WhatsApp Image 2025-08-20 at 16.53.31_ecbbc2e1.jpg" width="1150px" height="550px" class="enquiryimg">
-
-      <hr>
-      <!--enquiry page floating text-->
-      <h2><marquee>Interested? Tell Us What You Want</marquee></h2>
-      <hr><br>
-      <!--form-->
-      <div class="form">
-      <form onsubmit="return validateForm()" method="post" action="thankYou.html"  class="form">
-        <label for="name">First Name:</label>
-        <input type="text" id="name" placeholder="e.g Lesego" required><br><br>
-    
-        <label for="email">Email:</label>
-        <input type="text" id="email" placeholder="e.g Lesego123@gmail.com" required><br><br>
-    
-        <label for="phone number">Phone Number:</label>
-        <input type="tel" id="phone number" placeholder="e.g +27 623039645" maxlength="10" required><br><br>
-    
-        <label for="Question">Question/Request:</label>
-        <textarea type="text" id="question" placeholder="Type question here" rows="6"></textarea><br><br>
-    
-        <button type="submit">Submit</button>
-        <p id="error"></p>
-    
-       </form>
-    </div>
-    <script>
-     function validateForm(){
-            const email =document.getElementById("email").value;
-            const error =document.getElementById("error");
-            if (!email.includes("@")){
-                error.innerText = "Please enter a valid email.";
-                return false;
-            }
-            error.innerText = ""; //means if there's no error 
-            alert("Form submitted!");
-            return true;
-        }
-        </script>
+  <div class="theme-toggle">
+    <input type="checkbox" id="darkModeToggle" />
+    <label for="darkModeToggle" class="toggle-label">
+      <span class="icon sun">🌞</span>
+      <span class="icon moon">🌙</span>
+      <span class="toggle-ball"></span>
+    </label>
+  </div>
+  <!--enquiry page cover image-->
+  <img src="images/WhatsApp Image 2025-08-20 at 16.53.31_ecbbc2e1.jpg" width="1150px" height="550px" class="enquiryimg">
+  <hr>
+  <!--enquiry page floating text-->
+  <h2><marquee>Interested? Tell Us What You Want</marquee></h2>
+  <hr><br>
+  <!--form-->
+  <div class="form">
+    <form onsubmit="return validateForm()" method="post" action="thankYou.html" class="form">
+      <label for="name">First Name:</label>
+      <input type="text" id="name" placeholder="e.g Lesego" required><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="e.g Lesego123@gmail.com" required><br><br>
+      <label for="phone number">Phone Number:</label>
+      <input type="tel" id="phone number" placeholder="e.g +27 623039645" maxlength="10" required><br><br>
+      <label for="Question">Question/Request:</label>
+      <textarea type="text" id="question" placeholder="Type question here" rows="6"></textarea><br><br>
+      <button type="submit">Submit</button>
+      <p id="error"></p>
+    </form>
+  </div>
+  <!--footer-->
+  <footer>
+    &copy;TuftAway 2021
+  </footer>
 </body>
-<!--footer-->
-<footer>
-  &copy;TuftAway 2021
-</footer>
 </html>
